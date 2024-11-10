@@ -35,8 +35,10 @@ h1 {
     color: #ddd;
 }
 
+
 /* Style for the navigation bar */
-.top-nav ul {
+nav,
+.nav-links {
     list-style-type: none; /* Remove bullet points */
     margin: 0;
     padding: 0;
