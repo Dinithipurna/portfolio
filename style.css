@@ -6,11 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+/* body {
     color: #333;
     line-height: 1.6;
     background: #f4f4f4;
-}
+} */
 
 header {
     text-align: center;
@@ -76,6 +76,9 @@ h1 {
 /* Adjust the body to not overlap with the fixed navigation */
 body {
     margin-top: 60px; /* Adjust this value based on the height of your nav bar */
+    color: #333;
+    line-height: 1.6;
+    background: #f4f4f4;
 }
 
 /* nav {
