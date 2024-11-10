@@ -46,23 +46,6 @@ nav,
     background-color: #333; /* Background color for the nav bar */
 }
 
-.top-nav li {
-    flex: 1; /* Distribute space equally among items */
-    text-align: center; /* Center text in each tab */
-}
-
-.top-nav a {
-    display: block;
-    color: white; /* Text color */
-    padding: 14px 16px; /* Spacing within each tab */
-    text-decoration: none; /* Remove underline */
-}
-
-.top-nav a:hover {
-    background-color: #575757; /* Highlight on hover */
-}
-/* Adjust the body to not overlap with the fixed navigation */
-
 
 body {
     margin-top: 60px; /* Adjust this value based on the height of your nav bar */
