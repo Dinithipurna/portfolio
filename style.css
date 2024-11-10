@@ -35,7 +35,42 @@ h1 {
     color: #ddd;
 }
 
-nav {
+.top-nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0 15px;
+}
+
+.top-nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* nav {
     background: #333;
     color: #fff;
     padding: 1em 0;
@@ -55,7 +90,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
-}
+} */
 
 .content-section {
     max-width: 800px;
