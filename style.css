@@ -36,44 +36,32 @@ h1 {
 }
 
 /* Style for the navigation bar */
-.top-nav {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-}
-
 .top-nav ul {
+    list-style-type: none; /* Remove bullet points */
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    display: flex;
+    display: flex; /* Make the list items horizontal */
+    background-color: #333; /* Background color for the nav bar */
 }
 
-.top-nav ul li {
-    margin: 0;
+.top-nav li {
+    flex: 1; /* Distribute space equally among items */
+    text-align: center; /* Center text in each tab */
 }
 
-.top-nav ul li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
+.top-nav a {
+    display: block;
+    color: white; /* Text color */
+    padding: 14px 16px; /* Spacing within each tab */
+    text-decoration: none; /* Remove underline */
 }
 
-.top-nav ul li a:hover {
-    background-color: #575757;
-    border-bottom: 3px solid #ff6f61; /* Adds an underline effect on hover */
+.top-nav a:hover {
+    background-color: #575757; /* Highlight on hover */
 }
-
 /* Adjust the body to not overlap with the fixed navigation */
+
+
 body {
     margin-top: 60px; /* Adjust this value based on the height of your nav bar */
     color: #333;
