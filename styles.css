@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Left Panel: About Me */
+.about-me {
+    flex: 1;
+    max-width: 30%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid white;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.logos img {
+    max-width: 100px; /* Adjust the size while keeping the aspect ratio */
+    height: auto; /* Ensures the original aspect ratio is maintained */
+    object-fit: contain; /* Prevents distortion */
+    padding: 5px; /* Optional: Adds spacing */
+}
+
+
+/* Right Panel: Projects */
+.projects {
+    flex: 2;
+    max-width: 65%;
+    padding: 20px;
+    margin-left: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Widgets */
+.project-widget {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-widget:hover {
+    transform: scale(1.02);
+}
+
+.project-widget a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.project-widget h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.project-widget p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}

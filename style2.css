@@ -61,28 +61,12 @@ a:hover {
 }
 
 .logo {
-  font-size: 8rem;
+  font-size: 2rem;
 }
 
 .logo:hover {
   cursor: default;
 }
-
-.logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.logos img {
-  max-width: 80px; /* Adjust the size while keeping the aspect ratio */
-  height: auto; /* Ensures the original aspect ratio is maintained */
-  object-fit: contain; /* Prevents distortion */
-  padding: 5px; /* Optional: Adds spacing */
-}
-
 
 /* HAMBURGER MENU */
 
@@ -182,45 +166,27 @@ section {
 
 #profile {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  height: 100vh; /* Full screen height */
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  flex: 1; /* Take up half of the screen */
+  height: 100vh;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full coverage without distortion */
 }
 
 .section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  text-align: center;
-}
-
-#socials-container {
+  flex: 1; /* Other half of the screen */
+  padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  text-align: left; /* Align text to the left */
 }
 
 /* ICONS */
@@ -332,11 +298,11 @@ section {
 }
 
 .circle-image {
-  width: 300px; /* Adjust to your preferred size */
-  height: 300px; /* Make sure height matches width for a perfect circle */
-  border-radius: 50%; /* This creates the circular effect */
-  object-fit: cover; /* Ensures the image scales properly within the circle */
-  border: 5px solid #ccc; /* Optional: Add a border around the circle */
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  border: none;
 }
 
 
