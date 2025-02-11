@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -13,23 +15,7 @@ header {
     padding: 20px;
 }
 
-/* Main layout */
-.container {
-    display: flex;
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Left Panel: About Me */
-.about-me {
-    flex: 1;
-    max-width: 30%;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* Main Layout */
 
 .profile-pic {
     width: 150px;
@@ -41,7 +27,25 @@ header {
     border: 3px solid white;
 }
 
+.container {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
 
+/* Left Panel (About Me) */
+.about-me {
+    flex: 1;
+    max-width: 30%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Institution Logos */
 .logos {
     display: flex;
     justify-content: center;
@@ -51,19 +55,17 @@ header {
 }
 
 .logos img {
-    max-width: 100px; /* Adjust the size while keeping the aspect ratio */
-    height: auto; /* Ensures the original aspect ratio is maintained */
-    object-fit: contain; /* Prevents distortion */
-    padding: 5px; /* Optional: Adds spacing */
+    max-width: 80px; /* Keeps original ratio */
+    height: auto;
+    object-fit: contain;
+    padding: 5px;
 }
 
-
-/* Right Panel: Projects */
+/* Right Panel (Projects) */
 .projects {
     flex: 2;
     max-width: 65%;
     padding: 20px;
-    margin-left: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -106,4 +108,42 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 20px;
+}
+
+/* ======== MOBILE RESPONSIVENESS ======== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me, .projects {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .logos img {
+        max-width: 60px; /* Smaller logos for smaller screens */
+    }
+
+    .project-widget {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .logos img {
+        max-width: 50px;
+    }
+
+    .project-widget {
+        font-size: 13px;
+        padding: 10px;
+    }
 }
